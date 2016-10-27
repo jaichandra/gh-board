@@ -115,16 +115,16 @@ const LabelViewEdit = React.createClass({
       } else if (repoInfos.length === 1) {
         const [repoOwner, repoName] = repoInfos[0].split('/');
         details = (
-          <a target='_window' href={`https://github.com/${repoOwner}/${repoName}/labels`}>{repoName}</a>
+          <a target='_window' href={`https://git1.affinnova.com/${repoOwner}/${repoName}/labels`}>{repoName}</a>
         );
       } else if (repoInfos.length === 2) {
         const [repoOwner, repoName] = repoInfos[0].split('/');
         const [repoOwner2, repoName2] = repoInfos[1].split('/');
         details = (
           <span>
-            <a target='_window' href={`https://github.com/${repoOwner}/${repoName}/labels`}>{repoName}</a>
+            <a target='_window' href={`https://git1.affinnova.com/${repoOwner}/${repoName}/labels`}>{repoName}</a>
             <span> & </span>
-            <a target='_window' href={`https://github.com/${repoOwner2}/${repoName2}/labels`}>{repoName2}</a>
+            <a target='_window' href={`https://git1.affinnova.com/${repoOwner2}/${repoName2}/labels`}>{repoName2}</a>
           </span>
         );
       } else {
@@ -135,7 +135,7 @@ const LabelViewEdit = React.createClass({
               const [repoOwner1, repoName1] = repoInfo.split('/');
               return (
                 <p key={repoInfo}>
-                  <a target='_window' href={`https://github.com/${repoOwner1}/${repoName1}/labels`}>{repoOwner1}/{repoName1}</a>
+                  <a target='_window' href={`https://git1.affinnova.com/${repoOwner1}/${repoName1}/labels`}>{repoOwner1}/{repoName1}</a>
                 </p>
               )
             })}
@@ -143,7 +143,7 @@ const LabelViewEdit = React.createClass({
         );
         details = (
           <span className='-repo-and-more'>
-            <a target='_window' href={`https://github.com/${repoOwner}/${repoName}/labels`}>{repoName}</a>
+            <a target='_window' href={`https://git1.affinnova.com/${repoOwner}/${repoName}/labels`}>{repoName}</a>
             <span> & </span>
 
             <BS.OverlayTrigger trigger='click' placement='bottom' rootClose overlay={popover}>
@@ -285,7 +285,7 @@ const BatchLabelsShell = React.createClass({
 
     const uniquePanels = repoInfosWithUniqueLabels.map(({repoOwner, repoName, uniqueLabels}) => {
       const header = (
-        <span>Labels unique to <a target='_window' href={`https://github.com/${repoOwner}/${repoName}/labels`}>{repoOwner}/{repoName}</a></span>
+        <span>Labels unique to <a target='_window' href={`https://git1.affinnova.com/${repoOwner}/${repoName}/labels`}>{repoOwner}/{repoName}</a></span>
       )
       return (
         <BS.Col lg={6} key={`${repoOwner}/${repoName}`}>
