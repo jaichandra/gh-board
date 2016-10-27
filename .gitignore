@@ -1,2 +1,2 @@
 /node_modules/
-# /dist/ because gh-pages needs these
+/dist/
