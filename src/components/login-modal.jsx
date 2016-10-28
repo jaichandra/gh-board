@@ -1,6 +1,7 @@
 import React from 'react';
 import Client from '../github-client';
 import * as BS from 'react-bootstrap';
+import {getRepoUrl} from '../helpers';
 
 export default React.createClass({
   displayName: 'Login',
@@ -54,7 +55,7 @@ export default React.createClass({
             <p>Unlinke other issue trackers, this one runs <em>in your browser</em> via any <a href='https://pages.github.com' target='_blank'>static webserver{' '}<i className='octicon octicon-link-external'/></a> so secret application keys are not possible.</p>
             <h4>"OK, That's fair. How do I create a token?"</h4>
             <ol>
-              <li>Go to <a href='https://git1.affinnova.com/settings/tokens/new' target='_blank'>https://git1.affinnova.com/settings/tokens/new{' '}<i className='octicon octicon-link-external'/></a></li>
+              <li>Go to <a href={getRepoUrl() + `/settings/tokens/new`} target='_blank'>{getRepoUrl() + `/settings/tokens/new `}<i className='octicon octicon-link-external'/></a></li>
               <li>Provide a descriptive title (like "gh-board") in the "Token Description"</li>
               <li>Unselect all the checkboxes to just look at public repositories</li>
                 <ul>

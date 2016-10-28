@@ -90,3 +90,11 @@ export function convertRepoInfosToStr(repoInfos) {
     }
   }).join('|');
 }
+
+export function getRepoUrl() {
+  let hostname = document.location.hostname;
+  let tld = hostname.split('.');
+  tld.shift();
+  if (tld.join('.') == 'github.io') return 'https://github.com';
+  return 'https://' + hostname;
+}
