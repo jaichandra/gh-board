@@ -11,7 +11,7 @@ import AsyncButton from './async-button';
 import Time from './time';
 
 const SAMPLE_REPOS = [
-  {repoOwner: 'chanja14', repoName: 'nd-library'}
+  {repoOwner: 'UI', repoName: 'nd-library'}
   // {repoOwner: 'openstax', repoNames: ['tutor-js', 'tutor-server'], comment: ' (multiple repositories)'},
   // {repoOwner: 'jquery', repoName: 'jquery'}
 ];
