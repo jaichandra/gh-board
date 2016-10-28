@@ -11,9 +11,9 @@ import AsyncButton from './async-button';
 import Time from './time';
 
 const SAMPLE_REPOS = [
-  {repoOwner: 'huboard', repoName: 'huboard'},
-  {repoOwner: 'openstax', repoNames: ['tutor-js', 'tutor-server'], comment: ' (multiple repositories)'},
-  {repoOwner: 'jquery', repoName: 'jquery'}
+  {repoOwner: 'chanja14', repoName: 'nd-library'}
+  // {repoOwner: 'openstax', repoNames: ['tutor-js', 'tutor-server'], comment: ' (multiple repositories)'},
+  // {repoOwner: 'jquery', repoName: 'jquery'}
 ];
 
 
@@ -306,7 +306,7 @@ const ExamplesPanel = React.createClass({
     const examplesHeader = (
       <span className='examples-header'>
         <i className='org-icon octicon octicon-beaker'/>
-        {' Example Boards of GitHub Repositories'}
+        {' Pinned Boards of GitHub Repositories'}
       </span>
     );
 

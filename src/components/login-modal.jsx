@@ -54,7 +54,7 @@ export default React.createClass({
             <p>Unlinke other issue trackers, this one runs <em>in your browser</em> via any <a href='https://pages.github.com' target='_blank'>static webserver{' '}<i className='octicon octicon-link-external'/></a> so secret application keys are not possible.</p>
             <h4>"OK, That's fair. How do I create a token?"</h4>
             <ol>
-              <li>Go to <a href='https://github.com/settings/tokens/new' target='_blank'>https://github.com/settings/tokens/new{' '}<i className='octicon octicon-link-external'/></a></li>
+              <li>Go to <a href='https://git1.affinnova.com/settings/tokens/new' target='_blank'>https://git1.affinnova.com/settings/tokens/new{' '}<i className='octicon octicon-link-external'/></a></li>
               <li>Provide a descriptive title (like "gh-board") in the "Token Description"</li>
               <li>Unselect all the checkboxes to just look at public repositories</li>
                 <ul>
@@ -67,7 +67,7 @@ export default React.createClass({
             </ol>
             <h4>"GitHub Enterprise Endpoint"</h4>
             <p>
-              You need to set a custom <code>rootURL</code>. Set the following in your browser console:<br/>
+              You need to set a custom <code>rootURL</code>?. Set the following in your browser console:<br/>
               <pre>window.localStorage.setItem('gh-rootURL', 'https://github.example.com/api/v3')</pre>
             </p>
           </div>
